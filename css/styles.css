@@ -1,0 +1,377 @@
+:root {
+  --first-page-color: #ffffff;
+  --second-page-color: #2e2f42;
+  --third-page-color: #f4f4fd;
+  --first-text-color: #434455;
+  --hover--color: #404bbf;
+  --first--logo-color: #4d5ae5;
+  --typical-lh: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px solid red; */
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--second-page-color);
+  /* width: 1440px; */
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/*---------------header-------------------*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-logo {
+  color: inherit;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo-text {
+  color: var(--first--logo-color);
+}
+
+.header-list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+/*the font is 700 because there is no 600*/
+.header-item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+}
+
+.header-link {
+  display: block;
+  color: inherit;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover--color);
+}
+.address-list {
+  display: flex;
+  margin-left: 332px;
+  gap: 40px;
+}
+
+.address-link {
+  font-size: 16px;
+  color: var(--first-text-color);
+  font-style: normal;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--hover--color);
+}
+/*---------------hero-------------------*/
+.hero {
+  background-color: var(--second-page-color);
+  color: var(--first-page-color);
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0 auto;
+  width: 496px;
+}
+
+.hero-btn {
+  background-color: var(--first--logo-color);
+  color: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  border: 0;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hover--color);
+}
+
+/*---------------presentation-------------------*/
+.presentation {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.presentation-list {
+  display: flex;
+  gap: 22px;
+}
+
+.presentation-item {
+  display: block;
+  width: 264px;
+}
+
+.presentation-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.presentation-text {
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+  margin-top: 8px;
+}
+
+/*---------------projects-------------------*/
+.projects {
+  padding-bottom: 120px;
+}
+
+.projects-title {
+  margin-bottom: 72px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.projects-list {
+  display: flex;
+  gap: 24px;
+}
+
+.project-item {
+  display: block;
+  width: calc((100%-48px) / 3);
+}
+
+/*---------------team-------------------*/
+
+.team {
+  background-color: var(--third-page-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  display: block;
+  background-color: var(--first-page-color);
+  width: calc((100%-72px) / 4);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2x;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.team-specialty {
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+  text-align: center;
+  margin-top: 8px;
+  padding-bottom: 32px;
+}
+
+/*---------------footer-------------------*/
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--second-page-color);
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #f4f4fd;
+}
+
+.footer-text {
+  margin-top: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+  max-width: 264px;
+}
+
+/*---------------Portfolio-------------------*/
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.portfolio-btn {
+  background-color: var(--third-page-color);
+  color: var(--first--logo-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--first--logo-color);
+  color: var(--first-page-color);
+}
+
+.portfolio-images {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+/* .image-item {
+} */
+
+.image-box {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+
+.image-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2x;
+  letter-spacing: 0.02em;
+  color: var(--second-page-color);
+  display: block;
+}
+
+.image-category {
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+  margin-top: 8px;
+}
