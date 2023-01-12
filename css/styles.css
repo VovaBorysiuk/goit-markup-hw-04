@@ -219,7 +219,6 @@ body {
 }
 
 .presentation-item {
-  display: block;
   width: 264px;
 }
 
@@ -351,22 +350,18 @@ body {
   letter-spacing: 0.02em;
 }
 .customers-list {
-  padding-top: 72px;
+  margin-top: 72px;
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-.customer-item {
-  outline: 1px solid var(--second-page-color);
-  border-radius: 4px;
-}
+
 .customer-link {
+  outline: 1px solid var(--second-page-color);
   width: 100%;
   height: 100%;
   display: block;
-}
-
-.customer-icon {
+  border-radius: 4px;
   fill: var(--customer-logo-color);
 }
 
@@ -378,6 +373,10 @@ body {
   fill: var(--hover--color);
 }
 
+.customer-link:focus {
+  fill: var(--hover--color);
+  outline: 1px solid var(--hover--color);
+}
 /*---------------footer-------------------*/
 
 .footer {
