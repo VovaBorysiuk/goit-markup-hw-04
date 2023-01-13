@@ -357,7 +357,7 @@ body {
 }
 
 .customer-link {
-  outline: 1px solid var(--second-page-color);
+  border: 1px solid var(--second-page-color);
   width: 100%;
   height: 100%;
   display: block;
@@ -365,17 +365,15 @@ body {
   fill: var(--customer-logo-color);
 }
 
-.customer-item:hover {
-  outline: 1px solid var(--hover--color);
-}
-
-.customer-icon:hover {
+.customer-link:hover {
+  border: 1px solid var(--hover--color);
   fill: var(--hover--color);
 }
 
 .customer-link:focus {
+  outline: none !important;
   fill: var(--hover--color);
-  outline: 1px solid var(--hover--color);
+  border-color:  var(--hover--color);
 }
 /*---------------footer-------------------*/
 
